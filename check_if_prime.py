@@ -1,14 +1,10 @@
 def is_prime(a):
-    x = True 
-    for i in (2, a):
-            while x:
-               if a%i == 0:
-                   x = False
-               else:
-                   x = True
-
-
+    x = True
+    for j in range(2,int(a/2)):
+        if(a%j==0):
+            x=False
+            break
     if x:
-        print "prime"
-    else:
-        print "not prime"
+        print("Its a Prime")
+    else: 
+        print("Its not a Prime")
